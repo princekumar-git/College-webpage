@@ -1,0 +1,119 @@
+    /* Style the body and html to cover full height */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #222; /* Black background */
+        color: #fff; /* White text */
+        height: 100vh; /* Full viewport height */
+        display: flex; /* Flexbox layout */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        flex-direction: column;
+      }
+
+      header {
+        background-color: #222;
+        padding: 10px 20px;
+        position: fixed; /* Fixed at the top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-sizing: border-box;
+      }
+    
+      nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      #logo{
+        flex-shrink: 0;
+      }
+    
+      .logo{
+        width: 100px;
+      }
+    
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding:0;
+        display: flex;
+      }
+    
+      nav ul li {
+        margin-left:20px;
+      }
+    
+      nav ul li a {
+        color:red;
+        text-decoration: none;
+      }
+    
+      nav ul li a:hover {
+        color: #fff;
+        text-decoration:underline;
+        font-size: larger;
+      }
+  
+      /* Centered container for the login form */
+      .login-container {
+        background-color: rgb(0, 0, 0);
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 15px 15px rgba(0, 0, 5, 5);
+        width: 300px;
+      }
+  
+      /* Style the form */
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      /* Style form elements */
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+      }
+  
+      input[type="text"], input[type="password"] {
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+  
+      input[type="submit"] {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+  
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+  
+      /* Style the links */
+      .login-links {
+        text-align: center;
+        margin-top: 15px;
+      }
+  
+      .login-links a {
+        text-decoration: none;
+        color: #007bff;
+      }
+  
+      .login-links a:hover {
+        color: #0056b3;
+      }
