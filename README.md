@@ -32,9 +32,12 @@ I am actively working on adding more features and functionalities to the website
 - **Backend Integration**: In the future, I plan to integrate backend services for user authentication, session management, and data handling using technologies like PHP/Node.js and a database such as MySQL.
 
 
-## Contribution
+## Author
 
-#Owner / Developer: @princet806 
+ - Name : Prince Kumar
+ - Github : @princet806 (https://github.com/Princet806)
+ - Instagram : princethakur.insta (https://www.instagram.com/princethakur.insta/)
+ - Linkedin : Prince Kumar (https://www.linkedin.com/in/princethakurlink/)
 
 ## Status
 
