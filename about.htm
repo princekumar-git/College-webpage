@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>About Us - Meerut Institute of Technology</title>
+    <style>
+        /* Add your existing CSS styles here */
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 60px; /* Offset for the fixed header */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Allow footer to stay at bottom */
+        }
+
+        header {
+            background-color: #222;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            box-sizing: border-box;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            flex-shrink: 0;
+        }
+
+        .logo {
+            width: 100px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: red;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            font-size: larger;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+            padding: 20px; /* Added padding for main content */
+            background: #000;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #000000;
+            padding: 5px;
+            height: 100%; /* Set height for sidebar */
+            position: fixed; /* Fix sidebar position */
+        }
+
+        .sidebar h3 {
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #5a5a5a;
+            border: 2px solid #ccc;
+            display: block; /* Make links block elements */
+            padding: 10px; /* Add padding for better clickable area */
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #ddd; /* Highlight on hover */
+            color: red;
+        }
+
+        .content {
+            flex: 1;
+            padding-left: 270px; /* Offset for sidebar width */
+            padding-top: 20px; /* Added padding for content */
+            background:black;
+            display: none; /* Hide all content sections initially */
+        }
+
+        .content h2 {
+            margin-top: 0;
+        }
+
+        .content-text{
+            color: white;
+        }
+
+        #foundation{
+            color: #000;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .gallery img {
+            width: 100%; /* Make images responsive */
+            max-width: 400px; /* Limit max width */
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto; /* Push footer to bottom */
+        }
+
+        footer p {
+            color: #FF0000;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            color: #FF0000;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div id="logo">
+            <a href="collegeindex.htm"><img src="https://1000logos.net/wp-content/uploads/2022/08/MIT-Emblem.png" alt="College Logo" class="logo"></a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="collegeindex.htm#academics">Academics</a></li>
+                <li><a href="collegeindex.htm#admission">Admission</a></li>
+                <li><a href="collegeindex.htm#gallery">Gallery</a></li>
+                <li><a href="collegeindex.htm#contact">Contact Us</a></li>
+                <li><a href="login.htm">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="sidebar">
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="#" onclick="showContent('foundation')">Foundation</a></li>
+            <li><a href="#" onclick="showContent('approval-affiliation')">Approval & Affiliation</a></li>
+            <li><a href="#" onclick="showContent('chairman')">Chairman</a></li>
+            <li><a href="#" onclick="showContent('director')">Director</a></li>
+            <li><a href="#" onclick="showContent('principal')">Principal</a></li>
+            <li><a href="#" onclick="showContent('faculties')">Faculties</a></li>
+            <li><a href="#" onclick="showContent('campus-tour')">Campus Tour</a></li>
+            <li><a href="#" onclick="showContent('testimonials')">Testimonials</a></li>
+        </ul>
+    </div>
+
+    <div class="content" id="foundation">
+        <h2>Foundation</h2>
+        <p class="content-text">The Meerut Institute of Technology was founded in 1995 with a mission to provide quality education in the fields of engineering and technology.</p>
+    </div>
+
+    <div class="content" id="approval-affiliation">
+        <h2>Approval & Affiliation</h2>
+        <p class="content-text">The institute is approved by the All India Council for Technical Education (AICTE) and affiliated with Dr. APJ Abdul Kalam Technical University (AKTU).</p>
+    </div>
+
+    <div class="content" id="chairman">
+        <h2>Chairman</h2>
+        <p class="content-text">Our esteemed chairman, Dr. Rajeev Kumar, has been instrumental in guiding the institution towards excellence in education.</p>
+    </div>
+
+    <div class="content" id="director">
+        <h2>Director</h2>
+        <p class="content-text">Dr. Priya Singh, our director, is committed to fostering a culture of innovation and academic integrity within the institution.</p>
+    </div>
+
+    <div class="content" id="principal">
+        <h2>Principal</h2>
+        <p class="content-text">Prof. Anil Sharma, the principal, leads the academic and administrative functions with a vision for continuous improvement.</p>
+    </div>
+
+    <div class="content" id="faculties">
+        <h2>Faculties</h2>
+        <p class="content-text">We have a diverse faculty team with expertise across various disciplines, dedicated to providing students with the best learning experience.</p>
+    </div>
+
+    <div class="content" id="campus-tour">
+        <h2>Campus Tour</h2>
+        <div class="gallery">
+            <h3>Explore Our Campus</h3>
+            <p class="content-text">Take a virtual tour of our beautiful campus:</p>
+            <img src="campus1.jpg" alt="Campus Image 1">
+            <img src="campus2.jpg" alt="Campus Image 2">
+            <img src="campus3.jpg" alt="Campus Image 3">
+            <video controls>
+                <source src="campus-tour.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="content" id="testimonials">
+        <h2>Testimonials</h2>
+        <p  class="content-text">Hear from our students about their experiences at the Meerut Institute of Technology:</p>
+        <video controls>
+            <source src="student-testimonials.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Meerut Institute of Technology. All rights reserved.</p>
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/meerut-institute-of-technology-meerut/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/mit_meerut/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+<script>
+    function showContent(id) {
+        // Hide all content sections
+        var contents = document.querySelectorAll('.content');
+        contents.forEach(function(content) {
+            content.style.display = 'none';
+        });
+        
+        // Show the selected content section
+        var selectedContent = document.getElementById(id);
+        if (selectedContent) {
+            selectedContent.style.display = 'block';
+        }
+    }
+</script>
+</body>
+</html>
