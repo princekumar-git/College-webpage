@@ -3,87 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MIT,Meerut - Home</title>
-  <link rel="logo" type="image/png" href="favicon-16x16.png">
+  <title>MIT, Meerut - Home</title>
+  <link rel="icon" type="image/png" href="favicon-16x16.png">
   <link rel="stylesheet" href="collegestyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
   <!-- Header Section -->
   <header>
     <nav>
-      <div id="logo">
-        <img src="https://1000logos.net/wp-content/uploads/2022/08/MIT-Emblem.png" alt="College Logo" class="logo">
+      <div id="text-logo">
+        <span style="color: red;" class="arvo-bold">M</span><span class="arvo-bold">eerut</span><br>
+        <span style="color: red;" class="arvo-bold">I</span><span class="arvo-bold">nstitute of</span><br>
+        <span style="color: red;" class="arvo-bold">T</span><span class="arvo-bold">echnology</span>
       </div>
-      <div>
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#academics">Academics</a></li>
-          <li><a href="#admission">Admission</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-          <li><a href="login.htm">Login</a></li>
-        </ul>
-      </div>
+      <ul>
+        <li><a href="#about" class="arvo-bold">About Us</a></li>
+        <li><a href="#academics" class="arvo-bold">Academics</a></li>
+        <li><a href="#admission" class="arvo-bold">Admission</a></li>
+        <li><a href="#gallery" class="arvo-bold">Gallery</a></li>
+        <li><a href="#contact" class="arvo-bold">Contact Us</a></li>
+        <li><a href="login.htm" class="arvo-bold">Login</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-      <div class="hero-text">
-        <h1>Welcome 
-          <span style="color: red;">M</span>eerut
-          <span style="color: red;">I</span>nstitute of
-          <span style="color: red;">T</span>echnology
-        </h1>
-        <p class="hero-text">Empowering the Future Leaders</p>
-        <a href="#admissions" class="cta-btn">Apply Now</a>
-      </div>
+    <div class="hero-text">
+      <h1>Welcome 
+        <span style="color: red;">M</span><span>eerut</span>
+        <span style="color: red;">I</span><span>nstitute of</span>
+        <span style="color: red;">T</span><span>echnology</span>
+      </h1>
+      <p>Empowering the Future Leaders</p>
+      <a href="#admissions" class="cta-btn">Apply Now</a>
+    </div>
   </section>
 
   <!-- About Us Section -->
   <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>Meerut Institute of Technology (MIT), established in 2007, is one of the top engineering and professional education institutions in Uttar Pradesh, India. It offers a variety of undergraduate and postgraduate programs including B.Tech in Civil, Mechanical, Computer Science, and Electronics Engineering, B.Pharm, D.Pharm, BBA, BCA, B.Com, and B.Sc in Agriculture. MIT is affiliated with Dr. A.P.J. Abdul Kalam Technical University and approved by AICTE. The campus provides state-of-the-art facilities such as hostels, sports facilities, libraries, and strong placement support through connections with leading companies.</p>
-    <a href="about.htm" class="learn-more-btn">Learn More</a>
-  </section>
+    <div class="about-container">
+        <div class="about-info">
+            <h2>About Us</h2>
+            <p>Meerut Institute of Technology (MIT), established in 2007, is one of the top engineering and professional education institutions in Uttar Pradesh, India. It offers a variety of undergraduate and postgraduate programs and is affiliated with Dr. A.P.J. Abdul Kalam Technical University, approved by AICTE. The campus provides state-of-the-art facilities including hostels, sports facilities, libraries, and strong placement support.</p>
+            <a href="about.htm" class="learn-more-btn">Learn More</a>
+        </div>
+        <div class="latest-notices">
+            <h2>Latest Notices</h2>
+            <ul>
+                <li><strong>Notice 1:</strong> <marquee>Admission for the new session has started. Apply now!</marquee></li>
+                <li><strong>Notice 2:</strong> <marquee>Campus placement drive scheduled for next month.</marquee></li>
+                <li><strong>Notice 3:</strong> <marquee>Workshop on AI and Machine Learning on November 15.</marquee></li>
+                <li><strong>Notice 4:</strong> <marquee>Sports day will be held on December 5.</marquee></li>
+            </ul>
+        </div>
+    </div>
+</section>
 
   <!-- Academics Section -->
   <section id="academics" class="academics">
     <h2>Academic Programs</h2>
     <div class="programs">
-      <div class="program">
-        <h3>Engineering</h3>
-        <p>Bachelor's and Master's Programs in various engineering fields.</p>
-      </div>
-      <div class="program">
-        <h3>Business</h3>
-        <p>Undergraduate and MBA programs to develop future business leaders.</p>
-      </div>
-      <div class="program">
-        <h3>B.Pharma</h3>
-        <p>Undergraduate program in Pharmacy to create future medics.</p>
-      </div>
-      <!-- Add more programs as needed -->
+      <div class="program"><h3>Engineering</h3><p>Bachelor's and Master's Programs in various engineering fields.</p></div>
+      <div class="program"><h3>Business</h3><p>Undergraduate and MBA programs to develop future business leaders.</p></div>
+      <div class="program"><h3>B.Pharma</h3><p>Undergraduate program in Pharmacy to create future medics.</p></div>
     </div>
   </section>
 
-  <!-- Image Gallery Section -->
-  
+  <!-- Gallery Section -->
   <section id="gallery" class="gallery">
     <h2>Image Gallery</h2>
     <div class="gallery-container">
-        <div class="slider-wrapper">
-          <img src="https://www.cameraegg.org/wp-content/uploads/2016/01/Nikon-D500-Sample-Images-2.jpg" alt="Campus Image 1">
-        </div>
-  
-      <!-- YouTube Video Section -->
+      <div class="slider-wrapper">
+        <img src="https://www.cameraegg.org/wp-content/uploads/2016/01/Nikon-D500-Sample-Images-2.jpg" alt="Campus Image 1">
+      </div>
       <div class="video-container">
-        <iframe id="youtube" width="560" height="315"
-          src="https://www.youtube.com/embed/Qk_9UotFZlA?si=1sMRzVrmvNDgIEHd" 
-          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
+        <iframe id="youtube" src="https://www.youtube.com/embed/Qk_9UotFZlA?si=1sMRzVrmvNDgIEHd" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
   </section>
@@ -101,9 +100,9 @@
       <button type="submit">Submit</button>
     </form>
     <div class="contact-info">
-      <p>Address: Baral partapur, NH-58, meerut, uttarpradesh</p>
+      <p>Address: Baral partapur, NH-58, Meerut, Uttar Pradesh</p>
       <p>Phone: +91 XXXXXXXXXX</p>
-      <p>Email: email@mitmeerut.ac.in </p>
+      <p>Email: email@mitmeerut.ac.in</p>
     </div>
   </section>
 
@@ -111,12 +110,11 @@
   <footer>
     <p>&copy; 2024 Meerut Institute of Technology. All rights reserved.</p>
     <div class="social-links">
-      <a href="facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></I></a>
+      <a href="facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
       <a href="twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
       <a href="https://www.linkedin.com/in/meerut-institute-of-technology-meerut/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
       <a href="https://www.instagram.com/mit_meerut/" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
   </footer>
-
 </body>
 </html>
