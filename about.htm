@@ -3,20 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>About Us - Meerut Institute of Technology</title>
     <style>
-        /* Add your existing CSS styles here */
-        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding-top: 60px; /* Offset for the fixed header */
+            padding-top: 60px;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Allow footer to stay at bottom */
+            min-height: 100vh;
         }
+
+        .arvo-regular {
+      font-family: "Arvo", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .arvo-bold {
+      font-family: "Arvo", serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+    .arvo-regular-italic {
+      font-family: "Arvo", serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+    
+    .arvo-bold-italic {
+      font-family: "Arvo", serif;
+      font-weight: 700;
+      font-style: italic;
+    }
 
         header {
             background-color: #222;
@@ -67,7 +92,7 @@
         main {
             display: flex;
             flex-grow: 1;
-            padding: 20px; /* Added padding for main content */
+            padding: 20px;
             background: #000;
         }
 
@@ -75,8 +100,8 @@
             width: 250px;
             background: #000000;
             padding: 5px;
-            height: 100%; /* Set height for sidebar */
-            position: fixed; /* Fix sidebar position */
+            position: fixed;
+            height: calc(100% - 60px);
         }
 
         .sidebar h3 {
@@ -96,33 +121,29 @@
             text-decoration: none;
             color: #5a5a5a;
             border: 2px solid #ccc;
-            display: block; /* Make links block elements */
-            padding: 10px; /* Add padding for better clickable area */
+            display: block;
+            padding: 10px;
         }
 
-        .sidebar ul li a:hover {
-            background-color: #ddd; /* Highlight on hover */
+        .sidebar ul li a:hover,
+        .sidebar ul li.active a {
+            background-color: #ddd;
             color: red;
         }
 
         .content {
             flex: 1;
-            padding-left: 270px; /* Offset for sidebar width */
-            padding-top: 20px; /* Added padding for content */
-            background:black;
-            display: none; /* Hide all content sections initially */
+            padding-left: 270px;
+            padding-top: 20px;
+            display: none;
         }
 
         .content h2 {
             margin-top: 0;
         }
 
-        .content-text{
+        .content-text {
             color: white;
-        }
-
-        #foundation{
-            color: #000;
         }
 
         .gallery {
@@ -132,16 +153,31 @@
         }
 
         .gallery img {
-            width: 100%; /* Make images responsive */
-            max-width: 400px; /* Limit max width */
+            width: 100%;
+            max-width: 400px;
             margin: 10px 0;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
 
         footer {
             background-color: #000;
             padding: 20px;
             text-align: center;
-            margin-top: auto; /* Push footer to bottom */
+            margin-top: auto;
         }
 
         footer p {
@@ -164,25 +200,37 @@
         .social-links a:hover {
             color: #007bff;
         }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                position: relative;
+                height: auto;
+            }
+
+            .content {
+                padding-left: 20px;
+            }
+        }
     </style>
 </head>
 <body>
 
 <header>
     <nav>
-        <div id="logo">
-            <a href="collegeindex.htm"><img src="https://1000logos.net/wp-content/uploads/2022/08/MIT-Emblem.png" alt="College Logo" class="logo"></a>
-        </div>
-        <div>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="collegeindex.htm#academics">Academics</a></li>
-                <li><a href="collegeindex.htm#admission">Admission</a></li>
-                <li><a href="collegeindex.htm#gallery">Gallery</a></li>
-                <li><a href="collegeindex.htm#contact">Contact Us</a></li>
-                <li><a href="login.htm">Login</a></li>
-            </ul>
-        </div>
+      <div id="text-logo">
+        <span style="color: red;" class="arvo-bold">M</span><span class="arvo-bold">eerut</span><br>
+        <span style="color: red;" class="arvo-bold">I</span><span class="arvo-bold">nstitute of</span><br>
+        <span style="color: red;" class="arvo-bold">T</span><span class="arvo-bold">echnology</span>
+      </div>
+      <ul>
+        <li><a href="#about" class="arvo-bold">About Us</a></li>
+        <li><a href="#academics" class="arvo-bold">Academics</a></li>
+        <li><a href="#admission" class="arvo-bold">Admission</a></li>
+        <li><a href="#gallery" class="arvo-bold">Gallery</a></li>
+        <li><a href="#contact" class="arvo-bold">Contact Us</a></li>
+        <li><a href="login.htm" class="arvo-bold">Login</a></li>
+      </ul>
     </nav>
 </header>
 
@@ -239,19 +287,17 @@
             <img src="campus1.jpg" alt="Campus Image 1">
             <img src="campus2.jpg" alt="Campus Image 2">
             <img src="campus3.jpg" alt="Campus Image 3">
-            <video controls>
-                <iframe id="youtube" width="560" height="315"
-          src="https://www.youtube.com/embed/Qk_9UotFZlA?si=1sMRzVrmvNDgIEHd" 
-          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
-                Your browser does not support the video tag.
-            </video>
+            <div class="video-wrapper">
+                <iframe id="youtube" src="https://www.youtube.com/embed/Qk_9UotFZlA?si=1sMRzVrmvNDgIEHd" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 
     <div class="content" id="testimonials">
         <h2>Testimonials</h2>
-        <p  class="content-text">Hear from our students about their experiences at the Meerut Institute of Technology:</p>
+        <p class="content-text">Hear from our students about their experiences at the Meerut Institute of Technology:</p>
         <video controls>
             <source src="student-testimonials.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -276,13 +322,29 @@
         contents.forEach(function(content) {
             content.style.display = 'none';
         });
-        
+
+        // Remove active class from sidebar links
+        var links = document.querySelectorAll('.sidebar ul li');
+        links.forEach(function(link) {
+            link.classList.remove('active');
+        });
+
         // Show the selected content section
         var selectedContent = document.getElementById(id);
         if (selectedContent) {
             selectedContent.style.display = 'block';
+            // Mark the clicked link as active
+            var activeLink = Array.from(links).find(link => link.querySelector('a').innerText.toLowerCase().includes(id));
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
         }
     }
+
+    // Show the foundation content by default
+    document.addEventListener('DOMContentLoaded', function() {
+        showContent('foundation');
+    });
 </script>
 </body>
 </html>
