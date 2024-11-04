@@ -8,7 +8,7 @@
 
   html{
     scroll-behavior: smooth;
-    /* font-size: 62.5%; */
+    
   }
 
   /* Header Styling */
@@ -151,6 +151,10 @@ h1 {
     background-color: #111;
 }
 
+.about-info h2{
+  color:#ff0000;
+}
+
 .about-container {
     display: flex;
     justify-content: space-between;
@@ -172,7 +176,7 @@ h1 {
   color: white;
   padding: 5px 10px;
   border-radius: 10px;
-  box-shadow:0 , 4px , 8px rgba(0, 0, 0, 0.3);
+  box-shadow:0 , 4px , 8px rgba(0, 0, 0, 0.5);
 }
 
 .learn-more-btn:hover{
@@ -204,41 +208,66 @@ h1 {
   /* Academics Section */
   .academics {
     padding: 50px 20px;
-  }
+}
 
-  .academics h2 {
+.academics h2 {
     color: #FF0000;
     text-align: center;
     font-size: 36px;
     margin-bottom: 40px;
-  }
+}
 
-  .programs {
+.programs {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
+}
 
-  .program {
+.program {
     background-color: #222;
     padding: 20px;
     width: 400px;
-    height: 200px;
+    height: 280px;
     margin: 10px;
     border-radius: 10px;
     text-align: center;
     color: #fff;
-  }
+}
 
-  .program h3 {
+.program h3 {
     color: #FF0000;
     font-size: 24px;
-  }
+}
+
+.resource {
+    background-color: #FF0000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.resource a{
+  text-decoration: none;
+  color: white;
+}
+
+.resource:hover{
+  background-color: darkred;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
 
   /* Gallery Section */
   .media-section{
     margin: 0;
     height: auto;
+  }
+
+  .media-section h2{
+    color: #FF0000;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
   }
 
   .gallery-container{
