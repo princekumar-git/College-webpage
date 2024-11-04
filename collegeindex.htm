@@ -23,9 +23,9 @@
         <span style="color: red;" class="arvo-bold">T</span><span class="arvo-bold">echnology</span>
       </div>
       <ul>
+        <li><a href="#hero" class="arvo-bold">Home</a></li>
         <li><a href="#about" class="arvo-bold">About Us</a></li>
         <li><a href="#academics" class="arvo-bold">Academics</a></li>
-        <li><a href="#admission" class="arvo-bold">Admission</a></li>
         <li><a href="#gallery" class="arvo-bold">Gallery</a></li>
         <li><a href="#contact" class="arvo-bold">Contact Us</a></li>
         <li><a href="login.htm" class="arvo-bold">Login</a></li>
@@ -34,7 +34,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="hero-text">
       <h1>Welcome
         <span style="color: red;">M</span><span>eerut</span>
@@ -81,49 +81,55 @@
   <section id="academics" class="academics">
     <h2>Academic Programs</h2>
     <div class="programs">
-      <div class="program">
-        <h3>B.tech</h3>
-        <p><b><i>Bachelor of Technology</i></b>
-          Our B.Tech program offers undergraduate and graduate studies in various engineering disciplines, such as
-          Computer Science, Electrical, Mechanical, and Civil Engineering. The program emphasizes innovation,
-          problem-solving, and real-world applications.</p>
-      </div>
-      <div class="program">
+      <!-- Program Cards -->
+      <article class="program" id="program-btech">
+        <h3>B.Tech</h3>
+        <p><b><i>Bachelor of Technology</i></b><br>
+           Our B.Tech program offers undergraduate and graduate studies in engineering disciplines like Computer Science, Electrical, Mechanical, and Civil. It emphasizes innovation, problem-solving, and real-world applications.</p>
+        <div class="resource"><a href="resource.htm#resource-btech">Resources</a></div>
+      </article>
+      
+      <article class="program" id="program-bpharma">
         <h3>B.Pharma</h3>
-        <p><b><i>Bachelor of Pharmacy</i></b>
-          The B.Pharma program cultivates skilled professionals for the pharmaceutical and healthcare industries.
-          Students learn about drug development, medicinal chemistry, and pharmacology, with hands-on training in labs
-          and hospitals. Graduates are prepared for careers as pharmacists, researchers, and healthcare specialists.</p>
-      </div>
-      <div class="program">
-        <h3>BCA</h3>
-        <p><b><i>Bachelor of Computer Applications</i></b>
-          Our BCA program focuses on developing strong foundations in computer science, programming, and information
-          technology. The curriculum includes courses on software development, data structures, and networking. Coupled
-          with an optional MBA pathway, the program also offers business management skills for leadership roles in the
-          tech industry.</p>
-      </div>
-      <div class="program">
-        <h3>BBA</h3>
-        <p><b><i>Bachelor of Business Administration</i></b>
-          The BBA program provides a foundation in business management, economics, finance, and marketing. Through
-          internships and case studies, students gain real-world corporate exposure. The program also offers an MBA
-          track, helping students prepare for leadership roles in finance, marketing, and other industries.</p>
-      </div>
-      <div class="program">
-        <h3>B.Sc. Agriculture</h3>
-        <p>Undergraduate and MBA programs to develop future business leaders.</p>
-      </div>
-      <div class="program">
-        <h3>MBA</h3>
-        <p>Undergraduate and MBA programs to develop future business leaders.</p>
-      </div>
-    </div>
-  </section>
+        <p><b><i>Bachelor of Pharmacy</i></b><br>
+           Cultivating professionals for the pharmaceutical and healthcare industries. Focuses on drug development, medicinal chemistry, and pharmacology, with hands-on lab and hospital training.</p>
+        <div class="resource"><a href="resource.htm#resource-bpharma">Resources</a></div>
+      </article>
 
-  <!-- Gallery Section -->
+      <article class="program" id="program-bca">
+        <h3>BCA</h3>
+        <p><b><i>Bachelor of Computer Applications</i></b><br>
+           Provides a foundation in computer science, programming, and IT. Includes software development, data structures, and networking courses, with optional MBA for leadership in tech.</p>
+        <div class="resource"><a href="resource.htm#resource-bca">Resources</a></div>
+      </article>
+
+      <article class="program" id="program-bba">
+        <h3>BBA</h3>
+        <p><b><i>Bachelor of Business Administration</i></b><br>
+           A comprehensive course in business management, economics, finance, and marketing. Offers real-world corporate exposure through internships and case studies, with an MBA track.</p>
+        <div class="resource"><a href="resource.htm#resource-bba">Resources</a></div>
+      </article>
+
+      <article class="program" id="program-bsc-agriculture">
+        <h3>B.Sc. Agriculture</h3>
+        <p><b><i>Bachelor of Science in Agriculture</i></b><br>
+           Equips students with essential knowledge in agriculture, sustainability, and agribusiness. Includes hands-on learning and research for modern agricultural practices.</p>
+      <div class="resource"><a href="resource.htm#resource-agr">Resources</a></div>
+      </article>
+
+      <article class="program" id="program-mba">
+        <h3>MBA</h3>
+        <p><b><i>Master of Business Administration</i></b><br>
+           Prepares future business leaders with a focus on leadership, strategy, and business innovation, providing a competitive edge across industries like finance, marketing, and entrepreneurship.</p>
+        <div class="resource"><a href="resource.htm#resource-mba">Resources</a></div>
+      </article>
+    </div>
+</section>
+
+
   <!-- Media Section -->
   <section class="media-section" id="gallery">
+    <h2>Gallery</h2>
     <div class="gallery-container">
       <!-- Left Division: Image Gallery -->
       <div class="gallery">
