@@ -1,0 +1,265 @@
+/* General reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1c1c1c;
+}
+/* Header styling */
+header {
+    background-color: #222;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+    .arvo-regular {
+      font-family: "Arvo", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .arvo-bold {
+      font-family: "Arvo", serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+    .arvo-regular-italic {
+      font-family: "Arvo", serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+    
+    .arvo-bold-italic {
+      font-family: "Arvo", serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+  /* #logo{
+    flex-shrink: 0;
+  }
+
+  .logo{
+    width: 100px;
+  } */
+  header nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-left:20px;
+  }
+
+  nav ul li a {
+    color:red;
+    text-decoration: none;
+    
+  }
+
+  nav ul li a:hover {
+    color: #fff;
+    font-size:larger;
+  }
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Main container for nav and content */
+.container {
+    display: flex;
+}
+
+/* Navigation styling */
+.nav {
+    background-color: #222;
+    width: 20%;
+    margin-top: 110px;
+    margin-left:10px ;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    position:fixed;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    margin: 10px 0;
+}
+
+.nav ul a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+.nav ul a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Content styling */
+.content {
+    margin-top: 70px;
+    width: 80%;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: white;
+    margin-left:290px;
+}
+
+/* Section styling */
+.resource-section {
+    background-color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.resource-section h2 {
+    color:red;
+}
+
+.resource-section p {
+    color: #CCC;
+}
+
+.pdf-links a {
+    display: block;
+    margin: 10px 0;
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.pdf-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .nav {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.faculty-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.faculty-card{
+    display: flex;
+    background-color: #222;
+    width: 20rem;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faculty-image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.faculty-info{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.faculty-info h3{
+    color: rgb(255, 255, 255);
+}
+
+.faculty-info p{
+    color: rgb(255, 255, 255);
+}
+
+.facility-card{
+    display: flex;
+    background-color: #222;
+    width: 20rem;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facility-image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.placement-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.placement-card{
+    display: flex;
+    background-color: #222;
+    width: 200px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.placement-image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
