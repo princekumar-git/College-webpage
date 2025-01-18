@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arvo', serif;
+    background-color: #121212;
+    color: #f4f4f9;
+    margin: 0;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arvo-bold {
+    font-family: "Arvo", serif;
+    font-weight: 700;
+}
+
+header nav a {
+    color: #f4f4f9;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: red;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f4f4f9;
+    font-size: larger;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    max-width: 1000px;
+}
+
+.form-container {
+    position: absolute;
+    margin-left: 800px;
+    width: 590px;
+    margin-top: 180px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+form h2 {
+    margin-bottom: 15px;
+    color: #f4f4f9;
+}
+
+form label {
+    display: flex;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    margin: 5px;
+    width:250px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #2b2b2b;
+    color: #f4f4f9;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: darkred;
+}
+
+footer {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}

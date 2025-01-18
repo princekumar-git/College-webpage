@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT, Meerut - Home</title>
+    <link rel="icon" type="image/png" href="favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="addmission_style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="collegeindex.htm">
+                <div id="text-logo">
+                    <span style="color: red;" class="arvo-bold">M</span><span class="arvo-bold">eerut</span><br>
+                    <span style="color: red;" class="arvo-bold">I</span><span class="arvo-bold">nstitute of</span><br>
+                    <span style="color: red;" class="arvo-bold">T</span><span class="arvo-bold">echnology</span>
+                </div>
+            </a>
+            <ul>
+                <li><a href="collegeindex.htm#home" class="arvo-bold">Home</a></li>
+                <li><a href="collegeindex.htm#about" class="arvo-bold">About Us</a></li>
+                <li><a href="collegeindex.htm#academics" class="arvo-bold">Academics</a></li>
+                <li><a href="collegeindex.htm#gallery" class="arvo-bold">Gallery</a></li>
+                <li><a href="collegeindex.htm#contact" class="arvo-bold">Contact Us</a></li>
+                <li><a href="login.htm" class="arvo-bold">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="process-bar">
+            <img src="" alt="">
+        </div>
+        <div class="form-container" style="line-height: 0.5;">
+            <form action="admission.php" method="POST">
+                <h2 style="text-align: center;">Meerut Institute of Technology</h2>
+                <h3 style="opacity: 50%; text-align: center;">Exam Form 2025</h3>
+                <br><br>
+                <input type="text" name="name" id="name" placeholder="Student's Name" required>
+                <input type="email" name="email" id="email" placeholder="Student's Email" required>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Phone Number" required>
+                <input type="date" name="dob" id="dob" placeholder="Date of Birth" required>
+                <label for="education" required>Last education</label>
+                <select name="education" id="education" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="12th">12th</option>
+                    <option value="diploma">Diploma</option>
+                </select>
+                <input type="number" name="percentage" id="percentage" placeholder="Percentage" required>
+                <label for="jee">Competitive Exams?</label>
+                <select name="jee" id="jee" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <div id="exam-details" style="display: none;">
+                    <label for="exam-score">Exam Score (if applicable):</label>
+                    <input type="number" name="exam_score" id="exam-score" min="0">
+                </div>
+                <select name="branch" id="branch" required>
+                    <option value="" disabled selected>Select a branch</option>
+                    <option value="cse">Computer Science</option>
+                    <option value="it">Information Technology</option>
+                    <option value="me">Mechanical Engineering</option>
+                    <option value="ce">Civil Engineering</option>
+                    <option value="ee">Electrical Engineering</option>
+                    <option value="ec">Electronics & Communication</option>
+                </select>
+                
+                <br>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Meerut Institute of Technology. All rights reserved.</p>
+    </footer>
+    <script>
+        // Toggle visibility of exam details based on JEE selection
+        const jeeField = document.getElementById('jee');
+        const examDetails = document.getElementById('exam-details');
+
+        jeeField.addEventListener('change', function () {
+            examDetails.style.display = this.value === 'yes' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
