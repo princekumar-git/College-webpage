@@ -1,7 +1,7 @@
  /* General Styling */
  body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'arvo', sans-serif;
     background-color: #000; /* Black background */
     color: #fff; /* White text */
   }
@@ -60,7 +60,11 @@
   .logo{
     width: 100px;
   } */
-
+  header nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
   nav ul {
     list-style: none;
     margin: 0;
@@ -97,7 +101,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(WhatsApp\ Image\ 2024-10-12\ at\ 10.08.14\ PM.jpeg);
+    background-image: url(assests/WhatsApp\ Image\ 2024-10-12\ at\ 10.08.14\ PM.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -109,7 +113,7 @@
   position: relative; 
   text-align: center;
   margin-top: 100px;
-  z-index: 2; /* Ensure it's above the blurred image */
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.3); /*Semi-transparent background*/
   border-radius: 10px; /* Optional: add rounded corners */
   padding:20px; /* Add padding for better spacing */
