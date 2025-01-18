@@ -5,37 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
   <link rel="stylesheet" href="login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-          <div id="logo">
-            <a href="collegeindex.htm"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MIT_logo.svg/2560px-MIT_logo.svg.png" alt="College Logo" class="logo"></a>
-          </div>
-          <div>
-            <ul>
-              <li><a href="collegeindex.htm#about">About Us</a></li>
-              <li><a href="collegeindex.htm#academics">Academics</a></li>
-              <li><a href="collegeindex.htm#admission">Admission</a></li>
-              <li><a href="collegeindex.htm#gallery">Gallery</a></li>
-              <li><a href="collegeindex.htm#contact">Contact Us</a></li>
-              <li><a href="login.htm">Login</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+  <!-- Background for blur effect -->
+  <div class="background"></div>
+
+  <!-- header section -->
+  <header>
+    <nav>
+      <div id="text-logo">
+        <span style="color: red;" class="arvo-bold">M</span><span class="arvo-bold">eerut</span><br>
+        <span style="color: red;" class="arvo-bold">I</span><span class="arvo-bold">nstitute of</span><br>
+        <span style="color: red;" class="arvo-bold">T</span><span class="arvo-bold">echnology</span>
+      </div>
+      <ul>
+        <li><a href="collegeindex.htm#hero" class="arvo-bold">Home</a></li>
+        <li><a href="collegeindex.htm#about" class="arvo-bold">About Us</a></li>
+        <li><a href="collegeindex.htm#academics" class="arvo-bold">Academics</a></li>
+        <li><a href="collegeindex.htm#gallery" class="arvo-bold">Gallery</a></li>
+        <li><a href="collegeindex.htm#contact" class="arvo-bold">Contact Us</a></li>
+        <li><a href="login.htm" class="arvo-bold">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Login Form -->
   <div class="login-container">
     <h2>Login</h2>
     <form action="login.php" method="POST">
       <input type="text" name="username" placeholder="Roll Number" required>
-      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="password" placeholder="Password" required><br>
       <input type="submit" value="Login">
     </form>
     <div class="login-links">
       <a href="#">Forgot Password?</a><br>
-      <a href="#">Sign Up</a>
     </div>
   </div>
-
 </body>
 </html>
