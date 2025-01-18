@@ -1,350 +1,580 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>MIT Resources</title>
+    <link rel="icon" type="image/png" href="favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>About Us - Meerut Institute of Technology</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding-top: 60px;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        .arvo-regular {
-      font-family: "Arvo", serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-    
-    .arvo-bold {
-      font-family: "Arvo", serif;
-      font-weight: 700;
-      font-style: normal;
-    }
-    
-    .arvo-regular-italic {
-      font-family: "Arvo", serif;
-      font-weight: 400;
-      font-style: italic;
-    }
-    
-    .arvo-bold-italic {
-      font-family: "Arvo", serif;
-      font-weight: 700;
-      font-style: italic;
-    }
-
-        header {
-            background-color: #222;
-            padding: 10px 20px;
-            position: fixed;
-            width: 100%;
-            box-sizing: border-box;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #logo {
-            flex-shrink: 0;
-        }
-
-        .logo {
-            width: 100px;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            color: red;
-            text-decoration: none;
-        }
-
-        nav ul li a:hover {
-            color: #fff;
-            font-size: larger;
-        }
-
-        main {
-            display: flex;
-            flex-grow: 1;
-            padding: 20px;
-            background: #000;
-        }
-
-        .sidebar {
-            width: 250px;
-            background: #000000;
-            padding: 5px;
-            position: fixed;
-            height: calc(100% - 60px);
-        }
-
-        .sidebar h3 {
-            text-align: center;
-        }
-
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .sidebar ul li {
-            margin: 10px 0;
-        }
-
-        .sidebar ul li a {
-            text-decoration: none;
-            color: #5a5a5a;
-            border: 2px solid #ccc;
-            display: block;
-            padding: 10px;
-        }
-
-        .sidebar ul li a:hover,
-        .sidebar ul li.active a {
-            background-color: #ddd;
-            color: red;
-        }
-
-        .content {
-            flex: 1;
-            padding-left: 270px;
-            padding-top: 20px;
-            display: none;
-        }
-
-        .content h2 {
-            margin-top: 0;
-        }
-
-        .content-text {
-            color: white;
-        }
-
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .gallery img {
-            width: 100%;
-            max-width: 400px;
-            margin: 10px 0;
-        }
-
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-        }
-
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        footer {
-            background-color: #000;
-            padding: 20px;
-            text-align: center;
-            margin-top: auto;
-        }
-
-        footer p {
-            color: #FF0000;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        .social-links a {
-            color: #FF0000;
-            margin: 0 10px;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .social-links a:hover {
-            color: #007bff;
-        }
-
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 100%;
-                position: relative;
-                height: auto;
-            }
-
-            .content {
-                padding-left: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="about.css">
 </head>
+
 <body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <a href="collegeindex.htm">
+                <div id="text-logo">
+                    <span style="color: red;" class="arvo-bold">M</span><span class="arvo-bold">eerut</span><br>
+                    <span style="color: red;" class="arvo-bold">I</span><span class="arvo-bold">nstitute of</span><br>
+                    <span style="color: red;" class="arvo-bold">T</span><span class="arvo-bold">echnology</span>
+                </div>
+            </a>
+            <ul>
+                <li><a href="collegeindex.htm#home" class="arvo-bold">Home</a></li>
+                <li><a href="collegeindex.htm#about" class="arvo-bold">About Us</a></li>
+                <li><a href="collegeindex.htm#academics" class="arvo-bold">Academics</a></li>
+                <li><a href="collegeindex.htm#gallery" class="arvo-bold">Gallery</a></li>
+                <li><a href="collegeindex.htm#contact" class="arvo-bold">Contact Us</a></li>
+                <li><a href="login.htm" class="arvo-bold">Login</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <nav>
-      <div id="text-logo">
-        <span style="color: red;" class="arvo-bold">M</span><span class="arvo-bold">eerut</span><br>
-        <span style="color: red;" class="arvo-bold">I</span><span class="arvo-bold">nstitute of</span><br>
-        <span style="color: red;" class="arvo-bold">T</span><span class="arvo-bold">echnology</span>
-      </div>
-      <ul>
-        <li><a href="#about" class="arvo-bold">About Us</a></li>
-        <li><a href="#academics" class="arvo-bold">Academics</a></li>
-        <li><a href="#admission" class="arvo-bold">Admission</a></li>
-        <li><a href="#gallery" class="arvo-bold">Gallery</a></li>
-        <li><a href="#contact" class="arvo-bold">Contact Us</a></li>
-        <li><a href="login.htm" class="arvo-bold">Login</a></li>
-      </ul>
-    </nav>
-</header>
+    <div class="container">
+        <div class="nav">
+            <ul>
+                <li><a href="collegeindex.htm">HOME</a></li>
+                <li><a href="#chairman">Chairman</a></li>
+                <li><a href="#director">Director</a></li>
+                <li><a href="#principal">Principal</a></li>
+                <li><a href="#faculty">Faculties</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#life">Life @ MIT</a></li>
+                <li><a href="#placement">Placements</a></li>
+            </ul>
+        </div>
 
-<main>
-    <div class="sidebar">
-        <h3>Navigation</h3>
-        <ul>
-            <li><a href="#" onclick="showContent('foundation')">Foundation</a></li>
-            <li><a href="#" onclick="showContent('approval-affiliation')">Approval & Affiliation</a></li>
-            <li><a href="#" onclick="showContent('chairman')">Chairman</a></li>
-            <li><a href="#" onclick="showContent('director')">Director</a></li>
-            <li><a href="#" onclick="showContent('principal')">Principal</a></li>
-            <li><a href="#" onclick="showContent('faculties')">Faculties</a></li>
-            <li><a href="#" onclick="showContent('campus-tour')">Campus Tour</a></li>
-            <li><a href="#" onclick="showContent('testimonials')">Testimonials</a></li>
-        </ul>
-    </div>
+        <div class="content">
+            <!--chairman message -->
+            <section class="resource-section" id="chairman">
+                <h2>Chairman</h2>
+                <p>
+                <h3>Message from the Chairman</h3>
+                Welcome to the B.Tech program at our esteemed institution. As you embark on this exciting academic
+                journey, we are committed to providing you with an environment that fosters innovation, creativity, and
+                excellence. Our comprehensive curriculum, combined with hands-on experience and industry exposure,
+                ensures that you are well-prepared to meet the challenges of the ever-evolving tech landscape.
 
-    <div class="content" id="foundation">
-        <h2>Foundation</h2>
-        <p class="content-text">The Meerut Institute of Technology was founded in 1995 with a mission to provide quality education in the fields of engineering and technology.</p>
-    </div>
+                We are proud of our dedicated faculty, state-of-the-art facilities, and a strong network of alumni who
+                are making impactful contributions globally. I encourage you to explore the resources we offer and take
+                full advantage of the opportunities that lie ahead.
 
-    <div class="content" id="approval-affiliation">
-        <h2>Approval & Affiliation</h2>
-        <p class="content-text">The institute is approved by the All India Council for Technical Education (AICTE) and affiliated with Dr. APJ Abdul Kalam Technical University (AKTU).</p>
-    </div>
+                Together, we will work towards shaping the engineers of tomorrow—innovators who will drive change and
+                progress.
+                <br>
+                Best wishes,<br>
+                [Chairman's Name]<br>
+                Chairman, [Institution Name]</p>
+                <video controls width="400">
+                    <source src="assests/demo-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
 
-    <div class="content" id="chairman">
-        <h2>Chairman</h2>
-        <p class="content-text">Our esteemed chairman, Dr. Rajeev Kumar, has been instrumental in guiding the institution towards excellence in education.</p>
-    </div>
+            <!-- Director message -->
+            <section class="resource-section" id="director">
+                <h2>Director</h2>
+                <p>
+                <h3>Message from the Director</h3>
+                Welcome to [College Name], where we foster a nurturing and innovative environment for academic and personal growth. As
+                the Director, I am proud to lead a dedicated team of faculty and staff who are committed to providing quality education
+                and empowering students to reach their fullest potential. Our college blends tradition with modernity, offering diverse
+                programs that prepare students for the challenges of tomorrow's world. We emphasize holistic development, instilling not
+                only knowledge but also critical thinking, leadership, and values that shape future leaders. We invite you to join our
+                vibrant community and embark on a transformative educational journey.
+                <br>
+                Best wishes,<br>
+                [Director's Name]<br>
+                </p>
+                <video controls width="400">
+                    <source src="assests/demo-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
 
-    <div class="content" id="director">
-        <h2>Director</h2>
-        <p class="content-text">Dr. Priya Singh, our director, is committed to fostering a culture of innovation and academic integrity within the institution.</p>
-    </div>
+            <!-- Principal message -->
 
-    <div class="content" id="principal">
-        <h2>Principal</h2>
-        <p class="content-text">Prof. Anil Sharma, the principal, leads the academic and administrative functions with a vision for continuous improvement.</p>
-    </div>
+            <section class="resource-section" id="principal">
+                <h2>Principal</h2>
+                <p>
+                    <h3>message from principal's desk</h3>
+                    Dear Students,<br><br>
+                    
+                    Welcome to another exciting year at [College Name]. As your Principal, I am deeply committed to ensuring that your time
+                    here is filled with opportunities for growth, learning, and discovery. Our college is a place where curiosity is
+                    nurtured, talents are honed, and dreams are realized. I encourage each of you to take full advantage of the academic,
+                    extracurricular, and personal development opportunities available to you. Together, we will create a supportive and
+                    dynamic environment that will prepare you to excel in all aspects of life. Let’s make this year a remarkable one!
+                    <br>
+                    Sincerely,<br>
+                    [Principal’s Name] <br>
+                    Principal, [College Name]
+                </p>
+                <video controls width="400">
+                    <source src="assests/demo-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
 
-    <div class="content" id="faculties">
-        <h2>Faculties</h2>
-        <p class="content-text">We have a diverse faculty team with expertise across various disciplines, dedicated to providing students with the best learning experience.</p>
-    </div>
+            <!-- Faculties details -->
 
-    <div class="content" id="campus-tour">
-        <h2>Campus Tour</h2>
-        <div class="gallery">
-            <h3>Explore Our Campus</h3>
-            <p class="content-text">Take a virtual tour of our beautiful campus:</p>
-            <img src="campus1.jpg" alt="Campus Image 1">
-            <img src="campus2.jpg" alt="Campus Image 2">
-            <img src="campus3.jpg" alt="Campus Image 3">
-            <div class="video-wrapper">
-                <iframe id="youtube" src="https://www.youtube.com/embed/Qk_9UotFZlA?si=1sMRzVrmvNDgIEHd" 
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen></iframe>
-            </div>
+            <section class="resource-section" id="faculty">
+                <h2>Top Faculties</h2>
+                <p>Explore our resources for the B.Tech program.</p>
+                <div class="faculty-content">
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Faculty 1">
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Faculty Name</h3>
+                            <p>Designation</p>
+                            <p>Department</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Faculty 1">
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Faculty Name</h3>
+                            <p>Designation</p>
+                            <p>Department</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Faculty 1">
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Faculty Name</h3>
+                            <p>Designation</p>
+                            <p>Department</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Faculty 1">
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Faculty Name</h3>
+                            <p>Designation</p>
+                            <p>Department</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Faculty 1">
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Faculty Name</h3>
+                            <p>Designation</p>
+                            <p>Department</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Faculty 1">
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Faculty Name</h3>
+                            <p>Designation</p>
+                            <p>Department</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Faculty 1">
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Faculty Name</h3>
+                            <p>Designation</p>
+                            <p>Department</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Faculty 1">
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Faculty Name</h3>
+                            <p>Designation</p>
+                            <p>Department</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Faculty 1">
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Faculty Name</h3>
+                            <p>Designation</p>
+                            <p>Department</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Faculty 1">
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Faculty Name</h3>
+                            <p>Designation</p>
+                            <p>Department</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Faculty 1">
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Faculty Name</h3>
+                            <p>Designation</p>
+                            <p>Department</p>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <div class="faculty-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Faculty 1">
+                        </div>
+                        <div class="faculty-info">
+                            <h3>Faculty Name</h3>
+                            <p>Designation</p>
+                            <p>Department</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- display Facilities -->
+
+            <section class="resource-section" id="facilities">
+                <h2>Facilities</h2>
+                <p>We provide the best facilities in all the areas
+                    of the college to ensure a comfortable and conducive learning environment for our students.
+                    explore the facilities we offer.
+                </p>
+                <!-- Displaying facilties in the given format
+                    - Hostel
+                        - brief description
+                        - image gallery that pops bigger on hover
+                        and same for all other facilities
+                    - Library
+                    - Labs
+                    - Sports
+                    - Canteen
+                    - Auditorium
+                    - Transport
+                    - Medical
+                    - Wifi
+                    - Security
+                -->
+
+                <div class="facility-card">
+                    <h3>Hostel</h3>
+                    <p>Our hostels provide a comfortable and secure living environment for students. With modern amenities
+                        and a friendly atmosphere, our hostels are a home away from home.</p>
+                    <div class="facility-images">
+                        <img src="hostel1.jpg" alt="Hostel 1">
+                        <img src="hostel2.jpg" alt="Hostel 2">
+                        <img src="hostel3.jpg" alt="Hostel 3">
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <h3>Library</h3>
+                    <p>Our library is a treasure trove of knowledge, with a vast collection of books, journals, and
+                        digital resources. It is a quiet and serene space for students to study and research.</p>
+                    <div class="facility-images">
+                        <img src="library1.jpg" alt="Library 1">
+                        <img src="library2.jpg" alt="Library 2">
+                        <img src="library3.jpg" alt="Library 3">
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <h3>Labs</h3>
+                    <p>Our labs are equipped with the latest technology and equipment to provide students with hands-on
+                        experience and practical learning. From computer labs to science labs, we have it all.</p>
+                    <div class="facility-images">
+                        <img src="lab1.jpg" alt="Lab 1">
+                        <img src="lab2.jpg" alt="Lab 2">
+                        <img src="lab3.jpg" alt="Lab 3">
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <h3>Sports</h3>
+                    <p>We believe in the holistic development of our students, and sports play a vital role in that. Our
+                        sports facilities include a gym, playgrounds, and courts for various sports activities.</p>
+                    <div class="facility-images">
+                        <img src="sports1.jpg" alt="Sports 1">
+                        <img src="sports2.jpg" alt="Sports 2">
+                        <img src="sports3.jpg" alt="Sports 3">
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <h3>Canteen</h3>
+                    <p>Our canteen offers a variety of delicious and nutritious food options for students and staff. It is
+                        a popular spot on campus for meals and snacks.</p>
+                    <div class="facility-images">
+                        <img src="canteen1.jpg" alt="Canteen 1">
+                        <img src="canteen2.jpg" alt="Canteen 2">
+                        <img src="canteen3.jpg" alt="Canteen 3">
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <h3>Auditorium</h3>
+                    <p>Our state-of-the-art auditorium is equipped with modern audio-visual facilities and can accommodate
+                        a large audience. It is the venue for various events, seminars, and cultural activities.</p>
+                    <div class="facility-images">
+                        <img src="auditorium1.jpg" alt="Auditorium 1">
+                        <img src="auditorium2.jpg" alt="Auditorium 2">
+                        <img src="auditorium3.jpg" alt="Auditorium 3">
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <h3>Transport</h3>
+                    <p>We provide transport facilities for students and staff, ensuring a safe and convenient commute to
+                        and from the campus. Our buses are well-maintained and follow a regular schedule.</p>
+                    <div class="facility-images">
+                        <img src="transport1.jpg" alt="Transport 1">
+                        <img src="transport2.jpg" alt="Transport 2">
+                        <img src="transport3.jpg" alt="Transport 3">
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <h3>Medical</h3>
+                    <p>Health and well-being are a top priority for us, and we have a well-equipped medical center on
+                        campus. Our qualified medical staff provide round-the-clock care and support to students and
+                        staff.</p>
+                    <div class="facility-images">
+                        <img src="medical1.jpg" alt="Medical 1">
+                        <img src="medical2.jpg" alt="Medical 2">
+                        <img src="medical3.jpg" alt="Medical 3">
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <h3>Wifi</h3>
+                    <p>We understand the importance of staying connected in today's digital age. That's why we provide
+                        high-speed wifi connectivity across the campus, ensuring that students and staff can access
+                        information and resources seamlessly.</p>
+                    <div class="facility-images">
+                        <img src="wifi1.jpg" alt="Wifi 1">
+                        <img src="wifi2.jpg" alt="Wifi 2">
+                        <img src="wifi3.jpg" alt="Wifi 3">
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <h3>Security</h3>
+                    <p>The safety and security of our students and staff are of utmost importance to us. We have a
+                        dedicated security team that ensures a safe and secure environment on campus at all times.</p>
+                    <div class="facility-images">
+                        <img src="security1.jpg" alt="Security 1">
+                        <img src="security2.jpg" alt="Security 2">
+                        <img src="security3.jpg" alt="Security 3">
+                    </div>
+                </div>
+
+                
+            </section>
+
+            <!-- life@mit -->
+
+            <section class="resource-section" id="life">
+                <h2>Life @ MIT</h2>
+                <p>Explore our resources for the B.Tech program.</p>
+                <video controls width="400">
+                    <source src="btech_intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <!-- Placements -->
+
+            <section class="resource-section" id="placement">
+                <h2>Placements</h2>
+                <p>OUR TOP PLACEMENTS.</p>
+                <div class="placement-content">
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                    <div class="placement-card">
+                        <div class="placement-image">
+                            <img src="https://th.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?rs=1&pid=ImgDetMain" alt="Company 1">
+                        </div>
+                        <div class="placement-info">
+                            <h3>Company Name</h3>
+                            <p>Role Offered</p>
+                            <p>Package Offered</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </div>
 
-    <div class="content" id="testimonials">
-        <h2>Testimonials</h2>
-        <p class="content-text">Hear from our students about their experiences at the Meerut Institute of Technology:</p>
-        <video controls>
-            <source src="student-testimonials.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-</main>
-
-<footer>
-    <p>&copy; 2024 Meerut Institute of Technology. All rights reserved.</p>
-    <div class="social-links">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/meerut-institute-of-technology-meerut/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/mit_meerut/" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
-</footer>
-
-<script>
-    function showContent(id) {
-        // Hide all content sections
-        var contents = document.querySelectorAll('.content');
-        contents.forEach(function(content) {
-            content.style.display = 'none';
-        });
-
-        // Remove active class from sidebar links
-        var links = document.querySelectorAll('.sidebar ul li');
-        links.forEach(function(link) {
-            link.classList.remove('active');
-        });
-
-        // Show the selected content section
-        var selectedContent = document.getElementById(id);
-        if (selectedContent) {
-            selectedContent.style.display = 'block';
-            // Mark the clicked link as active
-            var activeLink = Array.from(links).find(link => link.querySelector('a').innerText.toLowerCase().includes(id));
-            if (activeLink) {
-                activeLink.classList.add('active');
-            }
-        }
-    }
-
-    // Show the foundation content by default
-    document.addEventListener('DOMContentLoaded', function() {
-        showContent('foundation');
-    });
-</script>
+    <footer>
+        <p>&copy; 2024 MIT. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
